@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(
-    // <h1 className="container">React Prototypes!</h1>,
-    greeting(user),
-    document.getElementById('root')
-);
+
 
 let luckyNumber = () => Math.floor((Math.random()*1000)+1);
 let name = 'user name';
@@ -26,3 +22,8 @@ var user ={
 	luckyNumber : luckyNumber()
 }
 
+ReactDOM.render(
+    // <h1 className="container">React Prototypes!</h1>,
+    greeting(user),
+    document.getElementById('root')
+);
