@@ -22,9 +22,11 @@ class Stopwatch extends Component{
 				<h1 className="display-3"> <Time elapsed={elapsed}/> </h1>
 				<hr className="my-3"/>
 				<p className="lead text-center"> {status} </p>
-				<button className="btn btn-outline-success mx-3" onClick={this.start}>start</button>
-				<button className="btn btn-outline-danger mx-3" onClick={this.stop}>stop</button>
-				<button className="btn btn-outline-warning mx-3" onClick={this.reset}>reset</button>
+				<p className="text-center">
+					<button className="btn btn-outline-success mx-3" onClick={this.start}>start</button>
+					<button className="btn btn-outline-danger mx-3" onClick={this.stop}>stop</button>
+					<button className="btn btn-outline-warning mx-3" onClick={this.reset}>reset</button>
+				</p>	
 			</div>
 		)
 	};
